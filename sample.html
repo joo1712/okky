@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>okky community benchmarking</title>
+    <link rel="stylesheet" href="css/sample.css">
+    <style>
+        html {
+        color: #343434;
+        }
+
+        html.dark {
+        background: #121212;
+        color: #bbb;
+        }
+
+        html.dark a {
+        color: #3ea6ff;
+}
+    </style>
+</head>
+<body>
+    <!-- Header Start -->
+    <header class="header pl50">
+        <!-- Nav Start -->
+        <nav class="header-nav">
+            <div class="container-header">
+                <!-- Logo Start -->
+                <a class="navbar-brand" href="#">
+                    <img src="images/okky-logo.svg" alt="log" width="150px;" height="100px;">
+                </a>
+                <!-- Logo End -->
+                <!-- menu Start -->
+                <div class="header-menu mr70">
+                    <ul class="menu-ul">
+                        <li class="menu-item">
+                            <a href="#">Q&A</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">지식</a>
+                        </li>
+                        <li class="menu-item">  
+                            <a href="#">커뮤니티</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">이벤트</a>
+                        </li>
+                        <li class="menu-item li-job">
+                            <img src="images/job.gif" width="43px" height="24px" style="position: relative; right: 9px; bottom: 19px;">
+                            <a href="#" style="position: relative; top: -9px; right: 40px; color: rgb(142, 60, 142);">JOBS</a>
+                        </li>
+                        <li class="menu-item li-notice">
+                            <a href="#">공지사항</a>
+                        </li>
+                    </ul>
+                </div>  
+                <!-- menu End -->
+                <!-- Menu Search Start-->
+                <div class="header-input">
+                    <!-- 검색 영역 Start-->
+                    <div class="input-div mr50">
+                        <div class="ipt-btn mr20">
+                            <button class="img-button" type="button"></button>
+                            <input class="search-ipt" type="text" value="" placeholder="검색">
+                        </div>
+
+                        <input type="checkbox" id="toggle-slider" style="display: none;">
+                        <label for="toggle-slider" id="toggle-label"></label>
+                    </div>
+                    <!-- 검색 영역 End -->
+                    <!-- 로그인 영역 Start -->
+                    <button class="btn-radius login mr20" type="button">로그인</button>
+                    <!-- 로그인 영역 End -->
+                    <!-- 회원가입 영역 Start -->
+                    <button class="btn-radius signUp" type="button">회원가입</button>
+                    <!-- 회원가입 영역 End -->
+
+                </div>
+                <!-- Menu Search End-->
+            </div>
+        </nav>
+        <!-- Nav End -->
+    </header>
+    <!-- Header End -->
+    <div class="main-container">
+        <div class="nav-content"></div>
+        <div class="sec-content1">Q&A</div>
+        <div class="sec-content2">커뮤니티</div>
+        <div class="sec-content3">WEEKLY BEST</div>
+        <div class="sec-content4">EDITOR'S CHOICE</div>
+        <div class="sec-content5">지식</div>
+        <div class="sec-content6">공지사항</div>
+    </div>
+    <footer>
+        <div class="footer-lt">푸터1</div>
+        <div class="footer-ct">푸터2</div>
+        <div class="footer-rt">푸터3</div>
+    </footer>
+</body>
+<script>
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        document.documentElement.classList.add("dark")
+    }
+
+    document.getElementById("toggle-label").addEventListener("click",() => {
+    document.documentElement.classList.toggle("dark");
+    document.getElementsByClassName("menu-item").style.color = "white";
+    })
+</script>
+</html>
