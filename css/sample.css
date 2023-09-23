@@ -54,7 +54,11 @@ footer {
     margin-right: 20px;
 }
 
-.menu-ul {
+.mr10 {
+    margin-right: 10px;
+}
+
+ul {
     list-style-type: none;
 }
 
@@ -220,10 +224,6 @@ a {
     text-decoration: none;
 }
 
-.container-footer {
-    display: flex;
-}
-
 .footer-item {
     margin-left: 120px;
     margin-top: 15px;
@@ -235,3 +235,31 @@ a {
     padding: 0 20px 0 20px;
 }
 
+.footer-container-item{
+    /* margin-left: 120px; */
+    /* margin-top: 20px; */
+}
+
+.footer-item-ul {
+    display: flex;  
+    justify-content: center; 
+}
+
+.bug {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    padding-right: 20px;
+    padding: 0 20px 0 20px;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-company {
+    margin-left: 90px;
+    margin-top: 5%;
+    font-size: 11pt;
+    line-height: 30px;
+}
